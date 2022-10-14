@@ -1,8 +1,7 @@
 {
-    "name": "react-berry-admin-template",
+    "name": "time-keeping-app",
     "version": "0.0.4",
     "private": true,
-    "homepage": "https://berrydashboard.io",
     "dependencies": {
         "@emotion/react": "^11.4.0",
         "@emotion/styled": "^11.3.0",
@@ -36,7 +35,7 @@
         "yup": "^0.32.9"
     },
     "scripts": {
-        "start": "react-scripts start",
+        "start": "react-scripts start --openssl-legacy-provider start",
         "build": "react-scripts build",
         "test": "react-scripts test --passWithNoTests",
         "eject": "react-scripts eject"

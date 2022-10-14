@@ -22,14 +22,14 @@ export const other = {
             icon: icons['IconBrandChrome'],
             breadcrumbs: false
         },
-        {
-            id: 'documentation',
-            title: 'Documentation',
-            type: 'item',
-            url: 'https://docs.appseed.us/products/react/node-js-berry-dashboard',
-            icon: icons['IconHelp'],
-            external: true,
-            target: true
-        }
+        // {
+        //     id: 'documentation',
+        //     title: 'Documentation',
+        //     type: 'item',
+        //     url: 'https://docs.appseed.us/products/react/node-js-berry-dashboard',
+        //     icon: icons['IconHelp'],
+        //     external: true,
+        //     target: true
+        // }
     ]
 };

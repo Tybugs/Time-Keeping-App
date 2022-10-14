@@ -3,7 +3,7 @@ import React from 'react';
 
 // material-ui
 import { useTheme } from '@material-ui/styles';
-import { Box, Card, Grid } from '@material-ui/core';
+import { Box, Card, Grid, Typography } from '@material-ui/core';
 
 // project imports
 import SubCard from './../../ui-component/cards/SubCard';
@@ -16,7 +16,10 @@ import { gridSpacing } from './../../store/constant';
 const ShadowBox = ({ shadow }) => {
     const theme = useTheme();
     return (
-        <Card sx={{ mb: 3, boxShadow: shadow }}>
+        <Card sx={{ mb: 3, boxShadow: shadow, textAlign: 'center' }}>
+            <Typography>
+                Full Name
+            </Typography>
             <Box
                 sx={{
                     display: 'flex',
@@ -27,7 +30,10 @@ const ShadowBox = ({ shadow }) => {
                     color: theme.palette.grey[800]
                 }}
             >
-                <Box sx={{ color: 'inherit' }}>boxShadow: {shadow}</Box>
+                <Typography>
+                Marty Pabello
+                </Typography>
+                {/* <Box sx={{ color: 'inherit' }}>boxShadow: {shadow}</Box> */}
             </Box>
         </Card>
     );
@@ -41,10 +47,10 @@ ShadowBox.propTypes = {
 
 const UtilitiesShadow = () => {
     return (
-        <MainCard title="Basic Shadow" secondary={<SecondaryAction link="https://next.material-ui.com/system/shadows/" />}>
+        <MainCard title="Evaluation">
             <Grid container spacing={gridSpacing}>
                 <Grid item xs={12}>
-                    <SubCard title="Basic Shadow">
+                    <SubCard title="Employee Name">
                         <Grid container spacing={gridSpacing}>
                             <Grid item xs={12} sm={6} md={4} lg={3}>
                                 <ShadowBox shadow="0" />
@@ -54,72 +60,6 @@ const UtilitiesShadow = () => {
                             </Grid>
                             <Grid item xs={12} sm={6} md={4} lg={3}>
                                 <ShadowBox shadow="2" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="3" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="4" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="5" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="6" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="7" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="8" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="9" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="10" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="11" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="12" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="13" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="14" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="15" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="16" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="17" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="18" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="19" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="20" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="21" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="22" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="23" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <ShadowBox shadow="24" />
                             </Grid>
                         </Grid>
                     </SubCard>

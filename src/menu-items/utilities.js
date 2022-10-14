@@ -1,5 +1,5 @@
 // assets
-import { IconBrandFramer, IconTypography, IconPalette, IconShadow, IconWindmill, IconLayoutGridAdd } from '@tabler/icons';
+import { IconBrandFramer, IconTypography, IconPalette, IconShadow, IconWindmill, IconLayoutGridAdd, IconClock, IconUser, IconWallet, IconSpeakerphone, IconFileAnalytics  } from '@tabler/icons';
 
 // constant
 const icons = {
@@ -8,58 +8,64 @@ const icons = {
     IconShadow: IconShadow,
     IconWindmill: IconWindmill,
     IconBrandFramer: IconBrandFramer,
-    IconLayoutGridAdd: IconLayoutGridAdd
+    IconLayoutGridAdd: IconLayoutGridAdd,
+    IconClock: IconClock,
+    IconUser: IconUser,
+    IconWallet: IconWallet,
+    IconSpeakerphone: IconSpeakerphone,
+    IconFileAnalytics: IconFileAnalytics
 };
 
 //-----------------------|| UTILITIES MENU ITEMS ||-----------------------//
 
 export const utilities = {
     id: 'utilities',
-    title: 'Utilities',
     type: 'group',
     children: [
         {
             id: 'util-typography',
-            title: 'Typography',
+            title: 'Profile',
             type: 'item',
             url: '/utils/util-typography',
-            icon: icons['IconTypography'],
+            icon: icons['IconUser'],
             breadcrumbs: false
         },
         {
             id: 'util-color',
-            title: 'Color',
+            title: 'Time Record',
             type: 'item',
             url: '/utils/util-color',
-            icon: icons['IconPalette'],
+            icon: icons['IconClock'],
             breadcrumbs: false
         },
         {
             id: 'util-shadow',
-            title: 'Shadow',
+            title: 'Evaluations',
             type: 'item',
             url: '/utils/util-shadow',
-            icon: icons['IconShadow'],
+            icon: icons['IconFileAnalytics'],
             breadcrumbs: false
         },
         {
             id: 'icons',
-            title: 'Icons',
+            title: 'Transactions',
             type: 'collapse',
-            icon: icons['IconWindmill'],
+            icon: icons['IconSpeakerphone'],
             children: [
                 {
                     id: 'tabler-icons',
-                    title: 'Tabler Icons',
+                    title: 'Payslip',
                     type: 'item',
                     url: '/icons/tabler-icons',
+                    icon: icons['IconWallet'],
                     breadcrumbs: false
                 },
                 {
                     id: 'material-icons',
-                    title: 'Material Icons',
+                    title: 'Leave',
                     type: 'item',
                     url: '/icons/material-icons',
+                    icon: icons['IconFileAnalytics'],
                     breadcrumbs: false
                 }
             ]

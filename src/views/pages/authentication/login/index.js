@@ -11,6 +11,7 @@ import Logo from './../../../../ui-component/Logo';
 import AuthCardWrapper from './../AuthCardWrapper';
 import RestLogin from './RestLogin';
 import AuthFooter from './../../../../ui-component/cards/AuthFooter';
+// import Logo from '../../../../assets/images/timelogo.png';
 
 // assets
 
@@ -31,6 +32,7 @@ const Login = () => {
                                     <Grid item sx={{ mb: 3 }}>
                                         <RouterLink to="#">
                                             <Logo />
+                                            {/* <img src={Logo} alt="" width={''}/> */}
                                         </RouterLink>
                                     </Grid>
                                     <Grid item xs={12}>

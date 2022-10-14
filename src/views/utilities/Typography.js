@@ -1,6 +1,6 @@
 import React from 'react';
 // material-ui
-import { Grid, Link } from '@material-ui/core';
+import { Grid, Avatar } from '@material-ui/core';
 import MuiTypography from '@material-ui/core/Typography';
 
 // project imports
@@ -9,114 +9,90 @@ import MainCard from './../../ui-component/cards/MainCard';
 import SecondaryAction from './../../ui-component/cards/CardSecondaryAction';
 import { gridSpacing } from './../../store/constant';
 
+
+//logo
+import User1 from "../../assets/images/users/user-round.svg"
+
+
+
+// assets
+import { IconSettings} from '@tabler/icons';
+
+// constant
+const icons = {
+    IconSettings: IconSettings
+};
+
 //==============================|| TYPOGRAPHY ||==============================//
 
 const Typography = () => {
     return (
-        <MainCard title="Basic Typography" secondary={<SecondaryAction link="https://next.material-ui.com/system/typography/" />}>
+        <MainCard title="Personal Information" secondary={<IconSettings />}>
             <Grid container spacing={gridSpacing}>
-                <Grid item xs={12} sm={6}>
-                    <SubCard title="Heading">
+                <Grid item xs={12} sm={4}>
+                    <SubCard>
+                        <Avatar
+                            src={User1}
+                            gutterBottom
+                            sx={{ height: '100px', width: '100px', justifyContent: 'center' }}
+                        />
                         <Grid container direction="column" spacing={1}>
                             <Grid item>
-                                <MuiTypography variant="h1" gutterBottom>
-                                    h1. Heading
-                                </MuiTypography>
-                            </Grid>
-                            <Grid item>
-                                <MuiTypography variant="h2" gutterBottom>
-                                    h2. Heading
-                                </MuiTypography>
-                            </Grid>
-                            <Grid item>
-                                <MuiTypography variant="h3" gutterBottom>
-                                    h3. Heading
-                                </MuiTypography>
-                            </Grid>
-                            <Grid item>
-                                <MuiTypography variant="h4" gutterBottom>
-                                    h4. Heading
+                            {/* //employee-id */}
+                                <MuiTypography variant="h5" gutterBottom>
+                                 420230 
                                 </MuiTypography>
                             </Grid>
                             <Grid item>
                                 <MuiTypography variant="h5" gutterBottom>
-                                    h5. Heading
+                                    Software Developer
                                 </MuiTypography>
                             </Grid>
-                            <Grid item>
-                                <MuiTypography variant="h6" gutterBottom>
-                                    h6. Heading
-                                </MuiTypography>
-                            </Grid>
+                            
                         </Grid>
                     </SubCard>
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                    <SubCard title="Sub title">
+                <SubCard>
                         <Grid container direction="column" spacing={1}>
                             <Grid item>
-                                <MuiTypography variant="subtitle1" gutterBottom>
-                                    subtitle1. Lorem ipsum dolor sit connecter adieu siccing eliot. Quos blanditiis tenetur
+                                <MuiTypography variant="h4" gutterBottom>
+                                    Marty Gee R. Pabello
                                 </MuiTypography>
                             </Grid>
                             <Grid item>
-                                <MuiTypography variant="subtitle2" gutterBottom>
-                                    subtitle2. Lorem ipsum dolor sit connecter adieu siccing eliot. Quos blanditiis tenetur
-                                </MuiTypography>
-                            </Grid>
-                        </Grid>
-                    </SubCard>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                    <SubCard title="Body">
-                        <Grid container direction="column" spacing={1}>
-                            <Grid item>
-                                <MuiTypography variant="body1" gutterBottom>
-                                    body1. Lorem ipsum dolor sit connecter adieu siccing eliot. Quos blanditiis tenetur unde suscipit, quam
-                                    beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat
-                                    deleniti? Eum quasi quidem quibusdam.
+                                <MuiTypography variant="h4" gutterBottom>
+                                    +639531294989
                                 </MuiTypography>
                             </Grid>
                             <Grid item>
-                                <MuiTypography variant="body2" gutterBottom>
-                                    body2. Lorem ipsum dolor sit connecter adieu siccing eliot. Quos blanditiis tenetur unde suscipit, quam
-                                    beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat
-                                    deleniti? Eum quasi quidem quibusdam.
-                                </MuiTypography>
-                            </Grid>
-                        </Grid>
-                    </SubCard>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                    <SubCard title="Extra">
-                        <Grid container direction="column" spacing={1}>
-                            <Grid item>
-                                <MuiTypography variant="button" display="block" gutterBottom>
-                                    button text
+                                <MuiTypography variant="h5" gutterBottom>
+                                    North Hill Arbours Tacloban City, Leyte
                                 </MuiTypography>
                             </Grid>
                             <Grid item>
-                                <MuiTypography variant="caption" display="block" gutterBottom>
-                                    caption text
+                                <MuiTypography variant="h5" gutterBottom>
+                                    martygee.webdev@gmail.com
                                 </MuiTypography>
                             </Grid>
                             <Grid item>
-                                <MuiTypography variant="overline" display="block" gutterBottom>
-                                    overline text
+                                <MuiTypography variant="h5" gutterBottom>
+                                    Bachelor of Science in Information Technology
                                 </MuiTypography>
                             </Grid>
                             <Grid item>
-                                <MuiTypography
-                                    variant="body2"
-                                    color="primary"
-                                    component={Link}
-                                    href="https://berrydashboard.io"
-                                    target="_blank"
-                                    display="block"
-                                    gutterBottom
-                                    underline="hover"
-                                >
-                                    https://berrydashboard.io
+                                <MuiTypography variant="h5" gutterBottom>
+                                AAA-GG-SSSS
+                                </MuiTypography>
+                            </Grid>
+                            <Grid item>
+                                <MuiTypography variant="h5" gutterBottom>
+                                    4253577234521
+                                </MuiTypography>
+                            </Grid>
+                            <Grid item>
+                                <MuiTypography variant="h5" gutterBottom>
+                                    6412312-423-124
                                 </MuiTypography>
                             </Grid>
                         </Grid>
